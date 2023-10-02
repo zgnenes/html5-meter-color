@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>odevpart1</title>
+    
+    
+    <style>
+        
+        .custom-meter {
+            width: 100px; 
+        }
+
+        .custom-meter::--webkit-meter-optimum-value {
+            background: #ccc; 
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <p><strong>Aldıkları puanlar:</strong></p>
+    <label for="renk1">Bar Rengini Değiştir:</label>
+    <input type="color" id="renk1" value="#ff0000">
+    <p><label for="bulent">Bülent:</label>
+    <meter id="bulent" class="bulent" min="0"  max="100" value="55"></meter><span id="not1">55</span><button onclick="aztikla('bulent','not1');">-</button><button onclick="coktikla('bulent','not1');">+</button></p>
+    <hr>
+    <label for="renk2">Bar Rengini Değiştir:</label>
+    <input type="color" id="renk2" value="#ff0000">  
+    <p><label for="umit">Ümit:</label>
+    <meter id="umit" class="umit" min="0"  max="100" value="100"></meter><span id="not2">100</span><button onclick="aztikla('umit','not2');">-</button><button onclick="coktikla('umit','not2');">+</button></p>
+    <hr>
+    <label for="renk3">Bar Rengini Değiştir:</label>
+    <input type="color" id="renk3" value="#ff0000">
+    <p><label for="fatih">Fatih:</label>
+    <meter id="fatih"min="0" max="100" value="70"></meter><span id="not3">70</span><button onclick="aztikla('fatih','not3');">-</button><button onclick="coktikla('fatih','not3');">+</button></p>
+    <hr>
+    <label for="renk4">Bar Rengini Değiştir:</label>
+    <input type="color" id="renk4" value="#ff0000">
+    <p><label for="selcuk">Selçuk:</label>
+    <meter id="selcuk" min="0"  max="100" value="90"></meter><span id="not4">90</span><button onclick="aztikla('selcuk','not4');">-</button><button onclick="coktikla('selcuk','not4');">+</button></p>
+    <hr>
+    <script src="script.js"></script>
+
+
+
+    
+
+  
+</body>
+</html>
